@@ -1,15 +1,23 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Summary", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Projects", href: "#" },
-];
+const Navigation = () => {
+  const navigation = [
+    { name: "Summary", href: "#summary" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+  ];
 
-export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'});
+    }
+    setMobileMenuOpen(false)
+  }
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 bg-gray">
@@ -31,7 +39,7 @@ export default function Example() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -39,7 +47,8 @@ export default function Example() {
             <a
               key={item.name}
               href={item.href}
-              className="text-xl font-semibold leading-6 dark:text-black"
+              onClick={() => scrollToSection(item.href.substring(1))}
+              className="text-xl font-semibold leading-6 dark:text-black cursor-pointer"
             >
               {item.name}
             </a>
@@ -67,7 +76,7 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              {/* Insert your close icon here */}
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -77,7 +86,8 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={() => scrollToSection(item.href.substring(1))}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 cursor-pointer"
                   >
                     {item.name}
                   </a>
@@ -89,4 +99,6 @@ export default function Example() {
       </Dialog>
     </header>
   );
-}
+};
+
+export default Navigation;

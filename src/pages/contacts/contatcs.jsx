@@ -8,7 +8,7 @@ const Contacts = () => {
         <div className="col-span-3 row-span-5 col-start-2 row-start-2">
           <div>
             <h1 className="sm:text-3xl text-2xl flex justify-center font-medium title-font font-boldmb-4 text-gray-900">
-              Contact Us
+              Contact Me
             </h1>
           </div>
           <div className="flex items-center justify-center p-12">

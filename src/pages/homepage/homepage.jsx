@@ -38,7 +38,7 @@ const Homepage = () => {
                 </a>
                 <a
                   className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
-                  href="#"
+                  href=""
                 >
                  Resume
                 </a>

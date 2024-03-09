@@ -38,14 +38,14 @@ const Projects = () => {
                 database, Bootstrap for styling, and a combination of HTML, CSS,
                 and JavaScript for front-end and user interaction.
               </p>
-              <ul className="list-none mt-6">
-                <div className="flex size-20 w-full">
-                <img src={Image2} />
-                <img src={Image3} />
-                <img src={Image4} />
-                <img src={Image5} />
-                <img src={Image6} />
-                </div>
+              <ul className="list-none mt-6 ">
+                  <div className="flex w-full size-16">
+                    <img src={Image2} />
+                    <img src={Image3} />
+                    <img src={Image4} />
+                    <img src={Image5} />
+                    <img src={Image6} />
+                  </div>
                 <div className="text-black-600 p-3 text-center inline-flex items-center justify-center w-50 h-10 mb-6 shadow-lg rounded-lg bg-white mt-8">
                   <p
                     href="https://enighander-store-fe-trial.vercel.app/home"
