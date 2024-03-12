@@ -59,7 +59,6 @@ const Projects = () => {
                 </div>
                 <div className="text-black-600 p-3 text-center inline-flex items-center justify-center w-50 h-10 mb-6 shadow-lg rounded-lg bg-white mt-8">
                   <p
-                    href="https://enighander-store-fe-trial.vercel.app/home"
                     className="fas fa-rocket text-xl sm:text-sm"
                   >
                     Link Here
@@ -125,7 +124,6 @@ const Projects = () => {
                 </div>
                 <div className="text-black-600 p-3 text-center inline-flex items-center justify-center w-50 h-10 mb-6 shadow-lg rounded-lg bg-white mt-8">
                   <p
-                    href="https://enighander-store-fe-trial.vercel.app/home"
                     className="fas fa-rocket text-xl sm:text-sm"
                   >
                     Link Here
@@ -145,10 +143,10 @@ const Projects = () => {
                     />
                   </svg>
                   <div className="ml-5 flex m-5">
-                    <a href="https://github.com/Enighander/Enighander-Store-FE-Trial">
+                    <a href="https://github.com/Enighander/my-portfolio">
                       <FaGithub className="size-7 m-3" />
                     </a>
-                    <a href="https://enighander-store-fe-trial.vercel.app/home">
+                    <a href="https://my-portfolio-ringgo.vercel.app/homepage">
                       <IoLogoVercel className="size-7 m-3" />
                     </a>
                   </div>
