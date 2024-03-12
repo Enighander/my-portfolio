@@ -14,10 +14,10 @@ const Homepage = () => {
         <div className="flex " style={{ height: "600px" }}>
           <div className="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
-              <h2 className="text-4xl font-semibold text-gray-800 md:text-4xl">
+              <h2 className="text-4xl font-semibold text-gray-800 md:text-4xl sm:mt-10">
                 Hello, Im <span className="text-indigo-600"> Rizki Bagus Farizi</span>
               </h2>
-              <p className="mt-5 text-base/loose text-gray-500 md:text-base/loose">
+              <p className="mt-5 text-base/loose text-gray-500 md:text-base/loose lg:text-lg">
                 As a budding web developer MERN Stack, foundational expertise in
                 JavaScript-based website development has been acquired.
                 Proficiency extends to frontend development using React.js and

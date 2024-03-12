@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/navbar";
 
 const Contacts = () => {
   return (
-    <div>
+    <div id="contacts">
       <div className="grid grid-cols-5 grid-rows-8 gap-4">
         <div className="col-span-3 row-span-5 col-start-2 row-start-2">
           <div>
@@ -12,11 +12,11 @@ const Contacts = () => {
             </h1>
           </div>
           <div className="flex items-center justify-center p-12">
-            <div className="mx-auto w-full max-w-[900px] sm: max-w-[400px] ">
+            <div className="mx-auto w-full sm:min-w-[300px] lg:max-w-[1000px]">
               <form>
                 <div className="mb-5">
                   <label
-                    for="name"
+                    htmlFor="name"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
                     Enter Name
@@ -31,7 +31,7 @@ const Contacts = () => {
                 </div>
                 <div className="mb-5">
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
                     Email Address
@@ -46,7 +46,7 @@ const Contacts = () => {
                 </div>
                 <div className="mb-5">
                   <label
-                    for="subject"
+                    htmlFor="subject"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
                     Subject
@@ -61,7 +61,7 @@ const Contacts = () => {
                 </div>
                 <div className="mb-5">
                   <label
-                    for="message"
+                    htmlFor="message"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
                     Message
