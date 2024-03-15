@@ -4,14 +4,14 @@ import Navbar from "../../components/navbar/navbar";
 import Skills from "../skills/skills";
 import Projects from "../projects/projects";
 import Contacts from "../contacts/contatcs";
-import bg8bit from "../../assets/Rimberio-removebg-preview.png";
+import bg8bit from "../../assets/8bit-wallpaper.jpg";
 
 const Homepage = () => {
   return (
     <div className="mt-20">
       <div className="bg-gradient-to-b from-sky-50 via-sky-200 to-sky-300">
       <Navbar />
-        <div className="flex " style={{ height: "600px" }}>
+        <div className="flex" style={{ height: "600px" }}>
           <div className="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
               <h2 className="text-4xl font-semibold text-gray-800 md:text-4xl sm:mt-10">
@@ -50,7 +50,7 @@ const Homepage = () => {
             style={{ clipPath: "polygon(10% 0, 100% 0%, 100% 100%, 0 100%)" }}
           >
             <div className="h-full w-full">
-              <img src={bg8bit} className="ml-40 h-full"/>
+              <img src={bg8bit} className="h-full"/>
               <div className="h-full bg-black opacity-25"></div>
             </div>
           </div>
