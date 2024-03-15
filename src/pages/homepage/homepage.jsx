@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 import Skills from "../skills/skills";
 import Projects from "../projects/projects";
 import Contacts from "../contacts/contatcs";
-import bg8bit from "../../assets/8bit-wallpaper.jpg";
+import bg8bit from "../../assets/Rimberio-removebg-preview.png";
 
 const Homepage = () => {
   return (
@@ -50,7 +50,7 @@ const Homepage = () => {
             style={{ clipPath: "polygon(10% 0, 100% 0%, 100% 100%, 0 100%)" }}
           >
             <div className="h-full w-full">
-              <img src={bg8bit} className="h-full w-full"/>
+              <img src={bg8bit} className="ml-40 h-full"/>
               <div className="h-full bg-black opacity-25"></div>
             </div>
           </div>

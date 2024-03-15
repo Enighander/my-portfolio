@@ -1,7 +1,11 @@
 import React from "react";
-import Navbar from "../../components/navbar/navbar";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 const Contacts = () => {
+
+ 
+
   return (
     <div id="contacts">
       <div className="grid grid-cols-5 grid-rows-8 gap-4">
@@ -13,20 +17,24 @@ const Contacts = () => {
           </div>
           <div className="flex items-center justify-center p-12">
             <div className="mx-auto w-full sm:min-w-[300px] lg:max-w-[1000px]">
-              <form>
+              <form
+                action="https://script.google.com/macros/s/AKfycbwHs4JbP9Z1LZ9i5r1-mTtnf8ozFRFUSUPotEC0bXX37Bfdh1PE1PxR8whbJwCVLc60CQ/exec"
+                method="POST"
+              >
                 <div className="mb-5">
                   <label
                     htmlFor="name"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Enter Name
+                    Name
                   </label>
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Full Name"
+                    placeholder="Enter Your Name"
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    required
                   />
                 </div>
                 <div className="mb-5">
@@ -34,7 +42,7 @@ const Contacts = () => {
                     htmlFor="email"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Email Address
+                    Email
                   </label>
                   <input
                     type="email"
@@ -42,6 +50,7 @@ const Contacts = () => {
                     id="email"
                     placeholder="example@domain.com"
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    required
                   />
                 </div>
                 <div className="mb-5">
@@ -57,6 +66,7 @@ const Contacts = () => {
                     id="subject"
                     placeholder="Enter your subject"
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    required
                   />
                 </div>
                 <div className="mb-5">
@@ -72,10 +82,14 @@ const Contacts = () => {
                     id="message"
                     placeholder="Type your message"
                     className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    required
                   ></textarea>
                 </div>
                 <div>
-                  <button className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">
+                  <button
+                    type="submit"
+                    className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+                  >
                     Submit
                   </button>
                 </div>
