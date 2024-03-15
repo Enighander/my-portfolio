@@ -3,8 +3,29 @@ import Swal from "sweetalert2";
 import axios from "axios";
 
 const Contacts = () => {
-
- 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    try {
+      await axios.post(
+        "https://script.google.com/macros/s/AKfycbwHs4JbP9Z1LZ9i5r1-mTtnf8ozFRFUSUPotEC0bXX37Bfdh1PE1PxR8whbJwCVLc60CQ/exec",
+        formData
+      );
+      Swal.fire({
+        icon: "success",
+        title: "Submitted successfully",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Form submission failed",
+        text: "An error occurred. Please try again later.",
+      });
+    }
+  };
 
   return (
     <div id="contacts">
@@ -17,10 +38,7 @@ const Contacts = () => {
           </div>
           <div className="flex items-center justify-center p-12">
             <div className="mx-auto w-full sm:min-w-[300px] lg:max-w-[1000px]">
-              <form
-                action="https://script.google.com/macros/s/AKfycbwHs4JbP9Z1LZ9i5r1-mTtnf8ozFRFUSUPotEC0bXX37Bfdh1PE1PxR8whbJwCVLc60CQ/exec"
-                method="POST"
-              >
+              <form onSubmit={handleSubmit}>
                 <div className="mb-5">
                   <label
                     htmlFor="name"
