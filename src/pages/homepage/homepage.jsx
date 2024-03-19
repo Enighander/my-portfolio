@@ -31,13 +31,13 @@ const Homepage = () => {
               <div className="flex justify-center lg:justify-start mt-6">
                 <a
                   className="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
-                  href="#"
+                  href="#contact"
                 >
                   Contact Me
                 </a>
                 <a
                   className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
-                  href=""
+                  href="https://drive.google.com/uc?export=download&id=10a7OEi-fXyM2cimAo_uwKOpf3jBMUY-p"
                 >
                  Resume
                 </a>

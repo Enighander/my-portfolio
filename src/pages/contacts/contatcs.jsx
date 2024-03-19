@@ -28,7 +28,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contacts">
+    <div id="contact">
       <div className="grid grid-cols-5 grid-rows-8 gap-4">
         <div className="col-span-3 row-span-5 col-start-2 row-start-2">
           <div>
