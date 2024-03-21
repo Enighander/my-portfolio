@@ -69,7 +69,7 @@ const Projects = () => {
     <div>
       <div className="flex justify-center">
         <h1
-          className="sm:mb-10 sm:text-3xl lg:mb-0 text-2xl font-medium title-font font-bold mb-4 text-gray-900"
+          className="sm:mb-5 sm:text-3xl text-2xl font-medium title-font font-bold text-gray-900"
           id="projects"
         >
           Projects

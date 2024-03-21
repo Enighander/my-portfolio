@@ -136,18 +136,18 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div>
+    <div className="sm:mt-32">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full">
             <h1
-              className="sm:text-3xl text-2xl font-medium title-font font-bold mb-4 text-gray-900"
+              className="sm:mb-10 sm:text-3xl text-2xl font-medium title-font font-bold text-gray-900"
               id="skills"
             >
               Skills
             </h1>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap">
             {skillsData.map((skill) => (
               <SkillCard key={skill.id} skill={skill} />
             ))}
