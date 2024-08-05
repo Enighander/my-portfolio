@@ -80,7 +80,7 @@ const projectsData = [
       { icon: <DiRedis />, name: "Redis" },
       { icon: <SiExpress />, name: "Express.js" },
     ],
-    githubLink: "https://github.com/Enighander/my-portfolio",
+    githubLink: "https://github.com/Enighander/Urban-Elite-Frontend",
     demoLink: "https://urban-elite-frontend.vercel.app/",
     imageSrc: urbanelite,
   },
