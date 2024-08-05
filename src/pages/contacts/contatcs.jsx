@@ -28,8 +28,8 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contact">
-      <div className="grid grid-cols-5 grid-rows-8 gap-4">
+    <div>
+      <div id="contact" className="grid grid-cols-5 grid-rows-8 gap-4">
         <div className="col-span-3 row-span-5 col-start-2 row-start-2">
           <div>
             <h1 className="sm:mb-10 sm:text-3xl text-2xl flex justify-center font-medium title-font font-boldmb-4 text-gray-900">

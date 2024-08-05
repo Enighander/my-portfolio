@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import enighstore from "../../assets/Thumbnail-Enigh-Store-Page.png";
 import portfolio from "../../assets/Thumnail-Portfolio.png";
+import urbanelite from "../../assets/Thumnail-Urban-Elite.jpg";
 import {
   FaReact,
   FaHtml5,
@@ -9,11 +10,13 @@ import {
   FaNode,
   FaGithub,
 } from "react-icons/fa";
+import { SiVite } from "react-icons/si";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
 import { IoLogoVercel, IoLogoJavascript } from "react-icons/io5";
 import { Transition } from "@headlessui/react";
 import { InView } from "react-intersection-observer";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
 
 const projectsData = [
   {
@@ -62,6 +65,25 @@ const projectsData = [
     demoLink: "https://my-portfolio-ringgo.vercel.app/homepage",
     imageSrc: portfolio,
   },
+  {
+    id: 3,
+    title: "Urban Elite",
+    description: `Urban Elite Clothing Store is an innovative e-commerce platform designed to offer the latest urban fashion trends. This project utilizes JavaScript, Express, Node.js, React.js, and MongoDB to create a dynamic, responsive, and user-friendly shopping experience. Key features include a modern design, seamless navigation, a comprehensive product catalog, a secure checkout process, and user accounts with order tracking. The integration of Redis ensures efficient caching, while Flowbite Tailwind CSS provides a sleek, custom-tailored UI. Vite.js is used for fast build times and optimized production performance, ensuring a smooth and engaging experience across all devices..`,
+    technologies: [
+      { icon: <FaReact />, name: "React" },
+      { icon: <FaHtml5 />, name: "HTML5" },
+      { icon: <FaCss3Alt />, name: "CSS3" },
+      { icon: <IoLogoJavascript />, name: "JavaScript" },
+      { icon: <SiTailwindcss />, name: "Tailwind" },
+      { icon: <FaNode />, name: "Node.js" },
+      { icon: <SiVite />, name: "Vite.js" },
+      { icon: <DiRedis />, name: "Redis" },
+      { icon: <SiExpress />, name: "Express.js" },
+    ],
+    githubLink: "https://github.com/Enighander/my-portfolio",
+    demoLink: "https://urban-elite-frontend.vercel.app/",
+    imageSrc: urbanelite,
+  },
 ];
 
 const Projects = () => {
@@ -69,13 +91,13 @@ const Projects = () => {
     <div>
       <div className="flex justify-center">
         <h1
-          className="sm:mb-5 sm:text-3xl text-2xl font-medium title-font font-bold text-gray-900"
+          className="sm:mb-5 sm:text-3xl text-2xl font-medium title-font text-gray-900"
           id="projects"
         >
           Projects
         </h1>
       </div>
-      <div className="flex flex-wrap items-start">
+      <div className="flex flex-wrap items-start ">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
@@ -117,7 +139,7 @@ const ProjectInfo = ({ project }) => {
     <div className="md:pr-12">
       <h3 className="sm:mt-10 text-2xl font-semibold">{project.title}</h3>
       <div className="w-full ">
-        <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+        <p className="mt-4 text-lg text-justify leading-relaxed text-blueGray-500">
           {project.description}
         </p>
       </div>
