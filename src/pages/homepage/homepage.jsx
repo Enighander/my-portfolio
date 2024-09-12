@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 import Skills from "../skills/skills";
 import Projects from "../projects/projects";
 import Contacts from "../contacts/contatcs";
-import bg8bit from "../../assets/8bit-wallpaper.jpg";
+import MyProfile from "../../assets/my-profile.jpeg";
 import "../homepage/homepage.css";
 
 const Homepage = () => {
@@ -25,12 +25,9 @@ const Homepage = () => {
                   <h2 className="text-4xl font-semibold text-gray-800 md:text-4xl">
                     Hello, Im
                   </h2>
-                    <p
-                      data-glitch="Rizki Bagus Farizi"
-                      className="glitch"
-                    >
-                      Rizki Bagus Farizi
-                    </p>
+                  <p data-glitch="Rizki Bagus Farizi" className="glitch">
+                    Rizki Bagus Farizi
+                  </p>
                 </Transition.Child>
                 <Transition.Child
                   enter="transition-opacity duration-1000"
@@ -69,11 +66,14 @@ const Homepage = () => {
           </div>
           <div
             className="hidden lg:block lg:w-1/2"
-            style={{ clipPath: "polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
+            style={{ clipPath: "polygon(30% 10%,70% 10%,70% 90%,30% 90%)" }}
           >
-            <div className="h-full w-full">
-              <img src={bg8bit} className="h-full" />
-              <div className="h-full bg-black opacity-25"></div>
+            <div className="h-full w-full flex items-center justify-center relative">
+              <img
+                src={MyProfile}
+                className="h-auto w-auto max-h-full max-w-full"
+              />
+              <div className="absolute inset-0 bg-black opacity-25"></div>
             </div>
           </div>
         </div>
